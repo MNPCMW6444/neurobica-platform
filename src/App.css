@@ -1,5 +1,16 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
+}
+
+button {
+  font-weight: bold;
 }
 
 .App-header {
@@ -10,6 +21,7 @@
   font-size: calc(10px + 2vmin);
   color: rgb(245, 242, 196);
   height: 20vh;
+  width: 100vw;
 }
 
 .App-body {
@@ -19,7 +31,8 @@
   justify-content: center;
   font-size: calc(10px + 3vmin);
   color: rgb(245, 242, 196);
-  height: 60vh;
+  height: 68vh;
+  width: 100vw;
 }
 
 .App-footer {
@@ -29,5 +42,79 @@
   justify-content: center;
   font-size: calc(10px + 1vmin);
   color: rgb(245, 242, 196);
-  height: 20vh;
+  height: 12vh;
+  width: 100vw;
+}
+
+.footerbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5vw solid black;
+  height: 10vh;
+  width: 99vw;
+}
+
+.footerbg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2vh;
+}
+
+.footerbutton {
+  position: absolute;
+  left: 50%;
+  top: 94vh;
+  transform: translate(-50%, -50%);
+  height: 12vh;
+  width: 12vh;
+}
+
+.footerbuttonbutton {
+  background-color: #04aa6d;
+  height: 12vh;
+  width: 12vh;
+  border-radius: 50%;
+  border: none;
+}
+
+.buttonleft {
+  display: inline;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 10vh;
+  width: 49.5vw;
+}
+
+.buttonright {
+  display: inline;
+  float: right;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 10vh;
+  width: 49.5vw;
+}
+
+.buttonleftbutton {
+  position: relative;
+  top: 2vh;
+  height: 6vh;
+  left: -5vw;
+  width: 25vw;
+  border: none;
+  border-radius: 15%;
+}
+
+.buttonrightbutton {
+  position: relative;
+  top: 2vh;
+  height: 6vh;
+  right: -5vw;
+  width: 25vw;
+  border: none;
+  border-radius: 15%;
 }

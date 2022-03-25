@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function Body() {
-  return <p>Body blah blah blah</p>;
+  return (
+    <div>
+      <p>Comming Soon!</p>
+    </div>
+  );
 }
