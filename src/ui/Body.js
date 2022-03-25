@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Body() {
-  return <h1>Body</h1>;
+  return <p>Body blah blah blah</p>;
 }
