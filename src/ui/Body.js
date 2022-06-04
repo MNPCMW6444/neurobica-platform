@@ -3,6 +3,7 @@ import { MuseClient } from "muse-js";
 import Chart from "./Chart";
 
 export default function Body() {
+  let c = 0;
   const [eeg1, setEeg1] = useState(
     new Array(
       {
@@ -77,7 +78,7 @@ export default function Body() {
 
       client.eegReadings.subscribe((reading) => {
         console.log(reading);
-
+        c++;
         let electrode0Samples;
         let electrode1Samples;
         let electrode2Samples;
@@ -166,8 +167,11 @@ export default function Body() {
         if (electrode1Samples) eeg[1] = electrode1Samples;
         if (electrode2Samples) eeg[2] = electrode2Samples;
         if (electrode3Samples) eeg[3] = electrode3Samples;
-        setEeg1(eeg);
-        console.log(" setEeg1(eeg);");
+        if (c === 100) {
+          c = 0;
+          setEeg1(eeg);
+          console.log(" setEeg1(eeg);");
+        } else console.log("c is still " + c);
       });
     } catch (e) {
       console.log("ERRORRR");
