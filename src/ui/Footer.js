@@ -4,7 +4,7 @@ import Box from "./footer/Box";
 import Bg from "./footer/Bg";
 import FooterButton from "./footer/FooterButton";
 
-export default function Footer() {
+export default function Footer () {
   return (
     <div>
       <div className="footerbutton">
