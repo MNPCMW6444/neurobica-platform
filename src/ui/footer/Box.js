@@ -3,10 +3,10 @@ import React from "react";
 export default function box() {
   return (
     <div>
-      <div class="buttonleft">
+      <div className="buttonleft">
         <button className="buttonleftbutton">Home</button>
       </div>
-      <div class="buttonright">
+      <div className="buttonright">
         <button className="buttonrightbutton">Social</button>
       </div>
     </div>
