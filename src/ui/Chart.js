@@ -27,9 +27,9 @@ export default function Chart(props) {
           bottom: 5,
         }}
       >
-        <CartesianGrid strokeDasharray="3 3" />
+        <CartesianGrid />
         <XAxis dataKey="name" />
-        <YAxis />
+        <YAxis type="number" domain={[-1000, 1000]} />
         <Tooltip />
         <Legend />
         <Bar dataKey="sample0" fill="#8884d8" />

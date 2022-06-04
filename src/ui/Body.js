@@ -167,7 +167,7 @@ export default function Body() {
         if (electrode1Samples) eeg[1] = electrode1Samples;
         if (electrode2Samples) eeg[2] = electrode2Samples;
         if (electrode3Samples) eeg[3] = electrode3Samples;
-        if (c === 100) {
+        if (c === 300) {
           c = 0;
           setEeg1(eeg);
           console.log(" setEeg1(eeg);");
